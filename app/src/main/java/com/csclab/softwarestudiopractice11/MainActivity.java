@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
          * (1) Use intent and Bundle to pass string
          * (2) Change activity to Activity2
          * **/
-        String name = edt.toString();
+        String name = new String();
+        name=edt.getText().toString();
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, Activity2.class);
         Bundle bundle = new Bundle();
